@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Position</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .containter{
+            /*Transform , filter or perspective properties can also make an element as positioned */
+            position: relative; /*--> position relative means the 
+            
+            child of this class will positioned relatively with this class like the margin , padding , display property include  */
+            
+            margin: 20px;
+            border: 3px solid brown;
+            background-color: bisque;
+            /*transform: translate(0);*/
+            /*filter: invert();*/
+            /*perspective: 0em;*/
+        }
+
+        .box {
+            margin: 20px;
+            padding: 10px;
+            border: 2px solid black;
+            height: 150px;
+            width: 80vw;
+            border-radius: 20px;
+        }
+
+        .box1 {
+            background-color: aquamarine;
+
+        }
+
+        .box2 {
+            background-color: greenyellow;
+            position: relative;
+            z-index: 1; /*more z-index value more it is the top of the divs */
+            top: 80px;
+            left: 40px
+        }
+
+        .box3 {
+            position: relative;
+            background-color: orange;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+        }
+
+        .box4 {
+            background-color: orangered;
+            position: absolute;
+            top: 40px;
+            left:20px;
+            color: white;
+        }
+        .box5{
+            background-color: deeppink;
+            position: fixed;
+            top: 10vh;
+            left: 60vw;
+            width: 120px;
+            z-index: 1;
+    
+        }
+        .box6{
+            background-color: violet;
+            position: sticky;
+            top: 10vh;
+            height: 20px;
+        }
+        .box7{
+            background-color: yellow;
+        }
+        .box8{
+            background-color: darkblue;
+        }
+        .box9{
+            background-color: purple;
+        }
+        .box10{
+            background-color: seagreen;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="containter">
+        <div class="box box1">BOX-1</div>
+        <div class="box box2">BOX-2 <br>This box is overlapping. Because it's poristion is
+            position: relative; and the top and left position is set in .box2it is upper of <strong>box3</strong> because of z-index . because of Z-Index value its always on the top of every box
+        </div>
+        <div class="box box3">BOX-3</div>
+        <div class="box box4">
+            BOX-4 <br>
+            This is box4 because of absolute position it seems like it is in the upper layer of the page and its top and left position starts from the <strong>containter</strong> starting position (parent class /nearest position ansesther)
+        </div>
+        <div class="box box5">
+            BOX-5<br>
+            This is fixed box the position is fixed in the screen 
+        </div>
+        <div class="box box6">BOX-6 - sticky box</div>
+        <div class="box box7"></div>
+        <div class="box box8"></div>
+        <div class="box box9"></div>
+        <div class="box box10"></div>
+        <div class="box box7"></div>
+        <div class="box box7"></div>
+        <div class="box box7"></div>
+        <div class="box box7"></div>
+        <div class="box box7"></div>
+        <div class="box box7"></div>
+        <div class="box box7"></div>
+        <div class="box box7"></div>
+    </div>
+</body>
+
+</html>

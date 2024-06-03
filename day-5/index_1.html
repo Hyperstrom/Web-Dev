@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS display </title>
+    <style>
+        .container {
+            background-color: antiquewhite;
+            margin: 20px;
+            padding: 10px;
+            display:block;
+        }
+        .container > span{
+            background-color: aqua;
+            margin: 10px;
+            padding: 10px;
+            width: 200px;
+            display: inline-block;
+            /*display:block;*/
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <span>
+            Lorem, Lorem ipsum, dolor sit amet consectetur adipisicing elit. Aperiam, repudiandae! Quibusdam, impedit libero aliquid, molestiae consectetur quis expedita ex animi debitis ipsa id voluptate doloribus consequatur sed corrupti, eos obcaecati.
+        </span>
+
+        <span>
+            Lorem
+        </span>
+        <span>
+            Lorem,
+        </span>
+    </div>
+</body>
+</html>

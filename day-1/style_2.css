@@ -1,0 +1,18 @@
+td{
+    border: 2px solid rgba(97, 194, 0, 0.753);
+    color: rgb(107, 6, 6);
+    background-color: aquamarine;
+}
+th{
+    border: 2px solid rgb(255, 175, 84);
+    color: rgb(0, 0, 0);
+    background-color:bisque;
+}
+caption{
+    background-color: rgb(255, 182, 73);
+}
+dt{
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    background-color:antiquewhite ;
+}

@@ -1,0 +1,18 @@
+/* starts from . that means it is CLass */
+
+.red{
+color: rgba(254, 33, 33, 0.986);
+}
+.bg-yellow{
+background-color: rgb(252, 252, 14);
+}
+/* starts from # that means it is ID */
+
+#first_div{
+    background-attachment: fixed;
+    background-color: aquamarine;
+
+}
+#second{
+    background-color:bisque;
+}

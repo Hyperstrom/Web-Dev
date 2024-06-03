@@ -1,0 +1,68 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu+Sans:wght@100..800&display=swap');
+.container{
+    display: flex;
+    justify-content: center;
+    background-image: url(resource/Ultimato.jpg);
+    background-size: cover;
+    
+}
+
+
+.box{
+    background-color: bisque;
+    margin: 130px;
+    border: 0px solid orange;
+    border-radius: 25px;
+    height: 450px;
+    width: 280px;
+}
+.color-box{
+    background:linear-gradient(180deg, #43484B, #D78541, #580111, #28030A, #190E15);
+}
+
+.box1{
+    background-color: gray;
+    width: 220px;
+    height: 220px;
+    border-radius: 10px;
+    margin: 30px 30px 0px 30px; /*top right bottom left*/
+}
+.iron-man{
+    background-image: url(resource/Ironman.jpg);
+    background-size: cover;
+}
+.cap{
+    background: url(resource/captain.jpg);
+    background-size: cover;
+}
+.title{
+    /* display: inline-block; */
+
+    background-color: rgba(255, 255, 255, 0.3);
+    margin: 10px 0px 0px 30px ;
+    border-radius: 10px;
+    max-width: 120px;
+    height: 35px;
+}
+.title >p{
+    padding:3px 12px 3px 12px;
+    font-size: 22px;
+    font-weight: bold;
+    font-family: "Ubuntu Sans", sans-serif;
+}
+.discription {
+    margin: 10px 30px 30px 30px;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 10px;
+    width: 220px;
+    min-height: 120px;
+}
+.discription >p{
+    padding: 10px;
+    font-size: 16px;
+    font-family: "Ubuntu Sans", sans-serif;
+}

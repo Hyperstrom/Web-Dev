@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Display property</title>
+
+    <!-- https://developer.mozilla.org/en-US/docs/Web/CSS/display -->
+    <style>
+        .box{
+            margin: 10px;
+            padding: 10px;
+            background-color: beige;
+            border: 3px solid orange;
+            border-radius: 10px;
+            /*display : inline || this make the element as a inline element cannot fixed the height, width and margin padding */
+            display: inline-block; /*use block element as a inline block element .
+            have the inline properties and block properties also*/
+            width: 40vw;
+            height: 40vh;
+        }
+        .box1{
+            /*display: none; || Do not visible the box (delect the box)*/
+            /*visibility: hidden; || Hidden the box not visible not the space for the box is still in there */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: small;
+            /*display: inline-flex;
+            justify-self: center;*/
+            
+
+        }
+    </style>
+</head>
+<body>
+    <div class = 'box box1'>
+        Lorem ipsum Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit veritatis asperiores tenetur eligendi molestiae, veniam facilis, fuga culpa quisquam sequi, ipsa expedita illum quos impedit nisi laborum quam vel reprehenderit!
+    </div>
+    <div class="box">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quas maiores nesciunt porro. Iure, quasi deserunt voluptate earum minus nulla, ut quidem harum maiores minima rem vel, iusto perspiciatis fugiat illum?
+    </div>
+    <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum voluptate ea, sed nostrum dolorem hvwkhfvwuifvh 
+    </span>
+    
+    <span>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint nam reprehenderit, similique numquam neque quia sequi autem adipisci eveniet dolore voluptates repellendus consequatur molestias tempore! Praesentium quos voluptas voluptatum rem!
+    </span>
+</body>
+</html>

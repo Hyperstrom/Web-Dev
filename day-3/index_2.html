@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        div , span {
+            color: blue;
+            background-color: bisque;
+        }
+        /*Child selector */
+        div > p {
+            color: rgb(235, 3, 208);
+            background-color: rgb(96, 247, 247);
+        }
+        .decen_2 > p{
+            color: rgb(255, 254, 254);
+            background-color: black;
+        }
+
+        /*Descendant Selectors*/
+        .decen p{
+            color: seagreen;
+            background-color: aquamarine;
+        }
+
+        /*Universal selector*/
+        *{
+            margin: 2;
+            padding: 2;
+        }
+
+        /*Pseuso selector */
+        a:visited{
+            background-color: chartreuse;
+            color: green;
+        }
+        a:active{
+            background-color: darkgoldenrod;
+        }
+    </style>
+</head>
+<body>
+    <div>This is css page </div>
+    <span> This is Span </span>
+
+    <h1 style="color: brown ; background-color: rgba(255, 119, 0, 0.934); "> This is Inline CSS </h1>
+    <h2>Normal divs</h2>
+    <div>
+        <ul>
+            <li style="color: blueviolet; background-color: rgb(242, 255, 0); ">this is Inline CSS </li>
+            <li>This is Internal CSS </li>
+        </ul>
+    </div>
+
+    <div>
+        <ul>
+            <li> this is a unordered list</li>
+            <li>This is also a list</li>
+        </ul>
+        <p>
+            this is para in a div 
+        </p>
+        <article>
+            <p>
+                this is para under arcticle under div. <br>
+                for this is reason the child selector is not working
+            </p>
+        </article>
+    </div>
+    <h3>decen Div</h3>
+    <div class="decen">
+        <p>
+            this is para under decen class. <br>
+            because of Descendant selector the color is that 
+
+        </p>
+        <article>
+            <p>
+                this is para under arcticle under div. <br>
+                in the decen div class 
+            </p>
+        </article>
+    </div>
+    <h3>decen_2 Div</h3>
+    <div class="decen_2">
+        <p>
+            This is decen_2 class 
+        </p>
+        <p>
+            <p>
+                This is para under para of decen_2
+            </p>
+        </p>
+    </div>
+    <div>
+        <p>
+            <a href="http://google.com">Google</a>
+        </p>
+        <p>
+            <a href="http://facebook.com">facebook</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>just casual excersize</title>
+    <style>
+        div {
+            margin: 20px;
+            padding: 20px;
+            background-color: bisque;
+        }
+       /*Make the first para in borown and rest of us in different color*/ 
+        /*div p:first-child{
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            border: 5px solid rgb(255, 174, 0);
+        }
+        div p:not(:first-child){
+            background-color:darkkhaki;
+            padding: 10px;
+            border: 5px solid seagreen;
+        }*/
+        /*Even paras in different color and odd paras are in different color*/
+        div p:nth-child(2n+1){ /*odd number of para*/
+            background-color: brown;
+            color: white;
+            padding: 10px;
+            border: 5px solid rgb(255, 174, 0);
+        }
+        div p:nth-child(2n){ /*even number of para*/
+            background-color:darkkhaki;
+            padding: 10px;
+            border: 5px solid seagreen;
+        } 
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vel eius cum odit deserunt ab fuga sit non
+            reprehenderit facilis fugit. Totam ea sunt vero commodi repudiandae nulla doloremque quas numquam.
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Aut autem libero eos id natus sequi quam rerum
+            corrupti cumque possimus voluptatibus pariatur, velit sit exercitationem ut dolore tenetur, architecto
+            perferendis!
+        </p>
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sed vel quibusdam sint harum officiis nostrum
+            soluta illo, labore facere distinctio, dignissimos debitis facilis voluptate aperiam ut cumque quisquam
+            esse!</p>
+
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui sed vel quibusdam sint harum officiis nostrum
+            soluta illo, labore facere distinctio, dignissimos debitis facilis voluptate aperiam ut cumque quisquam
+            esse!</p>
+    </div>
+
+    <div>
+        <p>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vero adipisci, sunt quos iste voluptates voluptate
+            expedita repellendus obcaecati dignissimos saepe, quod architecto tempora vel cum voluptatem. Minima eius
+            vitae rerum?
+        </p>
+        <p>
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Debitis totam obcaecati error, est maiores ipsum
+            iure illum ex beatae id eos, dolorum officiis et quibusdam explicabo ratione nulla autem aperiam?
+        </p>
+    </div>
+</body>
+
+</html>

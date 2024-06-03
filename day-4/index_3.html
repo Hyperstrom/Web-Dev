@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height and width unit </title>
+    <style>
+        html{
+            font-size: 12px;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .first p{
+            /*px is 196 of an inch*/
+            /*using ps can make a problem in responsib website*/
+            border: 10px solid orange;
+            padding: 10px;
+            background-color: bisque;
+            width: 200px;
+        }
+        .second p{
+            /*vw means view port width it makes the website responsive
+            100vw means 100% of the screen 
+            it takes the screen as view port */
+            margin: 20px auto; /*It make the div center */
+            /*margin auto will aplly if the element is block element if it was a inline element then it doesnot apply */ 
+            min-height: 30vh;
+            border: 10px solid brown;
+            padding: 10px;
+            width: 50vw;
+            background-color: coral;
+        }
+        .container {
+            
+            margin:30px auto; /*margin crash the 3opx margin is taken to separate this two divs*/
+            border: 10px solid seagreen;
+            padding: 10px;
+            width: 50vw;
+            min-height: 130vh;
+            /*height: 150vh; /*view port height*/
+            background-color: aquamarine;
+            font-size: 23px;
+            color: blueviolet;
+        }
+        /*em unit*/
+        .container p{
+            /*1.5em means it inherit the container fontsize the font size will be 18px but now it wil be 1.5x 18 */
+            font-size: 1.5em;
+            color: blue; 
+           
+        }
+        /*rem unit*/
+        .container article{
+            /*inharrent from the root element HTML  is a root elemenet 
+            rem means root em
+            1.5rem = 12x1.5 px */
+            color: rgb(143, 45, 45);
+            font-size: 1.5rem; 
+            width: 50%; /*it takes 50 % width of the parent Here parent is container */
+            padding: 5px;
+            border: 2px solid aliceblue;
+        }
+        .third p{
+            background-color: burlywood;
+            padding: 10px;
+            border: 10px solid rgb(220, 80, 20);
+            width: 50vmin;
+            /*vmin means view port minimum it takes the minimum of the screen width and height*/
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class = "first">
+        <p>
+            This is Using px. <br><br>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Accusamus, dolorem. Omnis corrupti inventore ducimus, ratione numquam, nesciunt quos labore aliquid sit officia eum unde harum dolore? Id ex tempora quod.
+        </p>
+    </div>
+    <div class = 'second'>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae minima laborum quam fuga ex harum, error modi obcaecati. Asperiores dignissimos perferendis deleniti. Voluptas rem excepturi nulla sunt quia consectetur illo!
+        </p>
+    </div>
+    <div class="container">
+        <span>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque consectetur aperiam quod quia illo alias maiores et, neque quam, 
+        </span>
+        <p>
+            <br>
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ipsum beatae, perspiciatis architecto cum, optio dicta suscipit
+        </p>
+        <article>
+            <br>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum asperiores voluptas velit itaque, minima magnam repudiandae odit, fugit dicta illo quo? Nobis adipisci excepturi eius accusamus veniam similique ad quidem.
+        </article>
+    </div>
+
+    <div class="third">
+        <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nisi vitae non eius rerum, illo odit impedit optio? 
+        </p>
+    </div>
+
+</body>
+</html>

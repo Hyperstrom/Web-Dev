@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fonts and Colors</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=LXGW+WenKai+Mono+TC&family=Sevillana&display=swap');
+        p{
+            font-family: 'Courier New', Courier, monospace; 
+            font-style: italic;
+            font-weight: bold;
+            text-decoration:underline;
+            line-height:1.4; 
+            letter-spacing: 2px;
+        }
+        h1{
+            color: brown;
+            font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            
+        }
+        h2{
+            text-align: center; /*Center the text*/
+            text-transform: capitalize;
+            text-decoration: underline; /* Test decoration property is underline */
+            text-decoration-color:brown ;
+            text-decoration-style: wavy; /*Text - decoration style */
+            text-decoration-thickness:4px ; /*Thickness of the underline */
+            text-indent: 30px; /*This text willl start after 30 px*/
+        }
+        .font p{
+            font-family: 'LXGW WenKai Mono TC', monospace;
+            font-style: normal;
+            text-decoration: dashed;
+            font-size: x-large;
+            color:chocolate ;
+        }
+        .class_2 >p{
+            border: 2px solid brown;
+            padding: 10px;
+            width: 100px;
+            text-overflow: ellipsis; /*if the text overflowed from the box then it used */
+            overflow: hidden; /*hidden the text which are overflowed*/
+            /*word-break: break-all;*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h1>Font Family </h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore quas quaerat laudantium vero perspiciatis tempore blanditiis id asperiores quidem vitae, aperiam eum accusamus dolorem fugit quis quibusdam, doloribus dolores ut!</p>
+    </div>
+    <h2> this is small letter</h2>
+    <div class="font">
+        <p>
+            this is paara under font div. <br>
+            This is imported font 
+        </p>
+    </div>
+    <div class="class_2">
+        <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Animi exercitationem suscipit iure repellat incidunt eius voluptatem nulla soluta, quia architecto sed eaque ut pariatur nobis, distinctio, quaerat ipsam quis dolore?
+        </p>
+    </div>
+</body>
+</html>
