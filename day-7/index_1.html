@@ -4,6 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Variable</title>
+    <style>
+        :root{
+            --color: blue;
+            --seccolor: red;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        div:first-child{
+            background-color: var(--color);
+        }
+        .container{
+            background-color: aquamarine;
+        }
+
+        ul{
+            display: flex;
+        }
+        ul li:first-child{
+        /*background-color: white ;*/
+            background-color: var(--seccolor);
+        }
+        ul li{
+            opacity: 0.7;
+            list-style: none;
+            padding: 0px 10px 0px 10px;
+        }
+    </style>
 </head>
 <body>
     <div>
@@ -12,6 +41,9 @@
             <li>About</li>
             <li>Contact</li>
         </ul>
+    </div>
+    <div class="container">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi rem unde ex, sed dolorum, tenetur asperiores sint officiis reprehenderit cum at quis odio quaerat, fugit recusandae quae iusto in! Repellat?
     </div>
 </body>
 </html>

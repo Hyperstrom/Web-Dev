@@ -4,10 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS media quary</title>
+    <style>
+        /*use variables */
+        :root{
+            --box_border_color: orange;
+            --box_padding: 10px;
+            --box_margin: 20px;
+            --box_color: antiquewhite;
+            --box_border: 10px;
+        }
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        body{
+            background-color: aqua;
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            /*align-items: center; ||--> align-item center means the all divs of the container are not in the same height they are in the different heights if there is a case of min-height*/ 
+        }
+
+        .box{
+            margin: var(--box_margin);
+            border: var(--box_border) solid var(--box_border_color);
+            background-color: antiquewhite;
+            border-radius: 20px;
+            padding: var(--box_padding);
+            width: 220px;
+            min-height: 220px;
+        }
+
+        /*use media quary to make the website responsibe*/
+        @media only screen and (max-width: 455px ) {
+            /* @media not|| only mediatype and (expressions)
+                CSS-code; */
+            body{
+                background-color: red;
+            }
+            .container{
+                flex-direction: column;
+                /*justify-content: center;*/
+                align-items: center;
+            }
+        }
+        @media only screen and (max-width:240px) {
+            body{
+                background-color: yellowgreen;
+            }
+            .box{
+                max-width: 80px;
+                min-height: 150px;
+                background-color: burlywood;
+            }
+        }
+
+        /*
+        media screen present for the portrait display 
+        @media screen and (orientation: portrait){
+            body{
+                border: 2px solid black;
+            }
+        }
+        */
+    </style>
 </head>
 <body>
   <div>
     hey I am using CSS 
   </div>  
+  <div class="container">
+      <div class="box">
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum necessitatibus nisi modi accusamus aliquid! Ipsa temporibus id facilis dignissimos sunt fuga voluptatibus. Nesciunt consequatur vel ipsa eligendi ut officii Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ipsam, aperiam Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta sint est quo? Cum reprehenderit laboriosam atque sequi, dolorem optio delectus.
+        </p>
+    </div>
+    <div class="box"></div>
+    <div class="box"></div>
+    <!-- <div class="box"></div>
+    <div class="box"></div> -->
+  </div>
+
 </body>
 </html>
