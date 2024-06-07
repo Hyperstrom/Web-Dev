@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>More on CSS Selector</title>
+    <style>
+        .box{
+            background-color: aqua;
+            margin: 10px;
+            border: 5px solid blueviolet;
+            padding: 10px;
+
+        }
+        .box:first-child{ /*This select the first child of the all divs */
+            background-color: aquamarine;
+        }
+        .box::first-line{ /*This is first line selector */
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            font-size: large;
+            color: rgb(129, 0, 0);
+        }
+        .container * { /* * means all items which is under this class that means all the box divs */
+            border-radius: 20px;
+        }
+
+        [data="primary"]{ /*This is attribute selector*/
+            background-color: bisque;
+        }
+
+
+        /*grouping 
+
+        p,a, .box { --> this is call grouping 
+            margin 5px 
+            border 5px solid black*/
+
+        .box::before{
+            content: "This is content attached through (After) CSS in BOX div  ";
+            color: blue;
+            /*pesudo elements --> dynamically add elements */
+            /*here can also add css styling properties */
+        }
+        .box::after{
+            content: "This is After Content ";
+            color:crimson;
+        }
+
+        .container::before{
+            content: "This is content attached through CSS in Container div  ";
+        }
+        
+        ::selection{
+            background-color: black;
+            color: aliceblue;
+        }
+    </style> 
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            Hey! this is HTML box. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tenetur molestias rerum asperiores. Iste quibusdam ratione, minima vitae blanditiis id corrupti sequi fugit cum quaerat incidunt odit error laudantium expedita, cumque qui quod. Alias repudiandae incidunt sit iste explicabo error voluptas porro molestiae laudantium sint fugit, harum vero aut, ab labore aperiam deleniti facilis! Magnam ut optio blanditiis enim culpa soluta ratione delectus, iste totam a, hic porro assumenda, autem perferendis provident quisquam eligendi maxime nobis! Tempore culpa blanditiis dolorum voluptatibus, consectetur perspiciatis inventore eos quos doloremque rem aut sed aliquam natus, laborum repellat, porro ratione fugiat cupiditate. A, rerum.
+        </div>
+        <div data="primary" class="box">Hey! this is HTML box. Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint impedit accusantium ut nihil dolore fugit provident ipsa placeat exercitationem nulla laboriosam natus, error, repellendus, maxime dolor dolorem necessitatibus commodi voluptatem in sed veniam laudantium. Alias nemo magni asperiores iusto error itaque repellat, incidunt eveniet ipsam cupiditate aspernatur laboriosam veritatis consectetur possimus ratione saepe. Exercitationem dignissimos rerum iusto cum provident ex.</div>
+        <div class="box">Hey! this is HTML box. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Rerum mollitia voluptatibus impedit et veniam nulla recusandae nesciunt voluptatum tenetur. Dignissimos molestias cupiditate quas eos libero earum iste doloremque culpa rem mollitia esse minus aliquid, itaque iure tempora? Nesciunt nemo quis sed eveniet natus, est architecto consequuntur eaque, debitis aliquam a alias aspernatur, eos tenetur qui quos nulla corrupti error libero aperiam. Deserunt hic ab laborum qui minus nihil architecto dolore aliquam officiis fuga recusandae explicabo, quia ullam, inventore vel sunt, soluta quod saepe blanditiis tenetur mollitia. Sint laudantium vitae maiores autem harum iste modi quo quasi dolor assumenda repellat aspernatur ipsum possimus minima alias, officiis temporibus obcaecati blanditiis quaerat nisi dolorum distinctio! Nisi commodi voluptatem repellat beatae! Cum, ea fuga!</div>
+    </div>
+</body>
+</html>

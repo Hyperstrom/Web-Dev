@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Float & Clear</title>
+    <style>
+        /*old websites are made with Float and Clear 
+        but mordern websites do not use float and clear*/
+        img {
+            width: 50vw;
+            /*The image floated to the left side and allow to write at the left side */
+            float: left;
+        }
+
+        /*@media only screen and (orientation: portrait){
+           
+        
+        body{
+           background-color: bisque;
+           img{
+            width: 70vw;
+           }
+        }
+        }*/
+        .container {
+            display: flow-root;
+            border: 2px solid black;
+        }
+
+        .card {
+            border: 5px solid orange;
+            margin: 10px;
+        }
+        .card:nth-child(3){
+            background-color: aqua;
+            clear: left; /*do not need left side floating element (image) */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <img src="avengers.jpg" alt="avengers">
+
+        <div class="card">Card 1 Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit corrupti sequi dicta
+            voluptate illum tempora veritatis, eos ipsum quod quis dolores distinctio nostrum provident laborum quam
+            assumenda facilis eligendi minima.</div>
+        <div class="card">Card 2
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae voluptatem autem, voluptate aperiam fugiat ad, soluta, reprehenderit iste architecto iure earum ipsam amet. Voluptatum consequuntur quasi, ab suscipit maxime veritatis id deleniti nobis voluptate nostrum maiores facere iure eveniet vitae!
+        </div>
+        <div class="card">Card 3 lorem80
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iste illo dignissimos fugit ab eveniet mollitia et ullam enim reiciendis accusantium maxime error eligendi expedita corporis ipsam repellendus distinctio vero nostrum cupiditate sint provident, ducimus autem eius fugiat. Vero aperiam unde numquam odit necessitatibus inventore atque est impedit aliquam id, exercitationem animi vel voluptatem. Omnis quam impedit quibusdam, veritatis nam officiis mollitia consequatur, nulla commodi corrupti magnam aliquid rerum itaque quos. Mollitia similique commodi, quidem repudiandae voluptatum laborum dignissimos nemo ipsam minima explicabo blanditiis vero fugit quibusdam, dolore ab placeat sunt magnam? Dolor aliquid incidunt, ea minima inventore maxime maiores!
+        </div>
+        <div class="card">Card 4 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum ab amet fugit tempore veritatis reprehenderit neque impedit, recusandae eligendi at harum ipsum? Similique quasi nemo fugit aliquam asperiores omnis deserunt. Earum animi ipsam odit quam, libero est incidunt nemo possimus cumque quas! Explicabo reiciendis illo numquam fuga, dignissimos sunt necessitatibus ea sit laudantium officia officiis illum et incidunt est amet. Officia tenetur expedita, neque nulla nam officiis maiores tempora eius accusamus fugiat similique, quibusdam, architecto id cumque ullam pariatur? Corporis commodi mollitia numquam perspiciatis ut beatae harum similique cumque alias.</div>
+    </div>
+</body>
+
+</html>
