@@ -44,13 +44,16 @@
             flex-wrap: wrap;
         }
         .flex_8{
-            gap: 40px;
-            align-content: center;
-           /*align-content: flex-end;
-            align-content: flex-start;
+            gap: 10px;
+            /*align-content: center;*/
+            align-content: flex-end;
+            /*align-content: flex-start;
             align-content: baseline;
             align-content: space-around;*/
             /*if justify content not apply when align content is applied the align content use when there are more then one line is the container*/
+        }
+        .flex_9{
+            align-content: baseline;
         }
         .flex_1{
             justify-content: flex-end;
@@ -91,11 +94,34 @@
             background-color: rgb(0, 179, 255);
             color: black ;
         }
+        .order-1{
+            order: 1;
+        }
+
+        .order-2{
+            order: 2;
+        }
+
+        .order-3{
+            order: 3;
+        }
+        .grow1{
+            flex-grow: 2;
+        }
+        .alien1{
+            align-self: flex-start;
+        }
+        .alien2{ 
+            align-self:flex-end ;
+        }
     </style>
 </head>
 
 <body>
     <main>
+        <H1>
+            Container properties
+        </H1>
         <H3>
             With out flex box
         </H3>
@@ -259,6 +285,39 @@
             <div class="box box1"></div>
             <div class="box box1"></div>
             <div class="box box1"></div>
+        </div>
+
+        <h1>Box properties / item properties</h1>
+        <h3>order</h3>
+        <p>
+            order property is used to change the order of the flex items. greater order number the chances of align the box in the end. <br> grow property to grow one box element width 
+        </p>
+        <div class="container display_5 flex_9">
+            <div class="box grow1">First</div>
+            <div class="box order-2">Second</div>
+            <div class="box">Third</div>
+            <div class="box order-1">Fourth</div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box "></div>
+            <div class="box box1 order-3">10th</div>
+            <div class="box grow1"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        🟠 align-self properties
+        <div class="container display_4">
+            <div class="box alien1">First</div>
+            <div class="box">Second</div>
+            <div class="box alien2">Third</div>
+            <div class="box">Fourth</div>
         </div>
     </main>
 </body>
