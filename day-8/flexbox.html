@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Flex Box </title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        h3{
+            margin-left: 10px;
+        }
+        .container {
+            background-color: yellowgreen;
+            padding: 5px;
+            border-radius: 10px;
+            margin: 10px;
+        }
+
+        .display_2 {
+            display: flex;
+            /*flex box automatically make the item left the right*/
+        }
+
+        .display_3 {
+            display: flex;
+            height: 100px;
+            justify-content: center;
+            /*justify-content center the boxses horizontally */
+        }
+        .display_4{
+            display: flex;
+            height: 100px;
+            justify-content: center;
+            align-items: center; /*align-items: center --> center the item vertically */
+        }
+        .display_5{
+            height: 500px;
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .flex_8{
+            gap: 40px;
+            align-content: center;
+           /*align-content: flex-end;
+            align-content: flex-start;
+            align-content: baseline;
+            align-content: space-around;*/
+            /*if justify content not apply when align content is applied the align content use when there are more then one line is the container*/
+        }
+        .flex_1{
+            justify-content: flex-end;
+        }
+        .flex_2{
+            justify-content: flex-start;
+        }
+        .flex_3{
+            justify-content: space-around;
+        }
+        .flex_4{
+            justify-content: space-between;
+        }
+        .flex_5{
+            flex-direction: column;
+            height: 200px;
+        }
+        .flex_6{
+            flex-direction: column-reverse;
+            height: 200px;
+        }
+        .flex_7{
+            flex-direction: row-reverse;
+        }
+        .box {
+            height: 24px;
+            width: 60px;
+            border: 5px solid orange;
+            margin: 5px;
+            gap: 10px;
+            padding: 2px;
+            border-radius: 4px;
+            background-color: blueviolet;
+            color: aliceblue;
+        }
+        .box1{
+            margin: 0px;
+            background-color: rgb(0, 179, 255);
+            color: black ;
+        }
+    </style>
+</head>
+
+<body>
+    <main>
+        <H3>
+            With out flex box
+        </H3>
+        <div class="container">
+            <div class="box">First</div>
+            <div class="box">Second</div>
+            <div class="box">Third</div>
+            <div class="box">Fourth</div>
+
+        </div>
+
+        <H3>
+            with flex box
+        </H3>
+        <div class="container display_2">
+            <div class="box">First</div>
+            <div class="box">Second</div>
+            <div class="box">Third</div>
+            <div class="box">Fourth</div>
+        </div>
+        <H3>
+            with flex box and justify content center 
+        </H3>
+        <div class="container display_3">
+            <div class="box">First</div>
+            <div class="box">Second</div>
+            <div class="box">Third</div>
+            <div class="box">Fourth</div>
+        </div>
+        <h3>
+            with flex box justify-content center and align-item center 
+        </h3>
+        <div class="container display_4">
+            <div class="box">First</div>
+            <div class="box">Second</div>
+            <div class="box">Third</div>
+            <div class="box">Fourth</div>
+        </div>
+        <h3>
+            More justify-content properties these properties also goes to align-item 
+        </h3>
+        <p>
+            🟠 flex-end : the boxes are go to the end of the container 
+        </p>
+        <div class="container display_4 flex_1">
+            <div class="box">First</div>
+            <div class="box">Second</div>
+            <div class="box">Third</div>
+            <div class="box">Fourth</div>
+        </div>
+        <p>
+            🟠 flex-start : the boxes are go to the start of the container 
+        </p>
+        <div class="container display_4 flex_2">
+            <div class="box">First</div>
+            <div class="box">Second</div>
+            <div class="box">Third</div>
+            <div class="box">Fourth</div>
+        </div>
+        <p>
+            🟠 space-around :
+        </p>
+        <div class="container display_4 flex_3">
+            <div class="box">First</div>
+            <div class="box">Second</div>
+            <div class="box">Third</div>
+            <div class="box">Fourth</div>
+        </div>
+        <p>
+            🟠 space-between: 
+        </p>
+        <div class="container display_4 flex_4">
+            <div class="box">First</div>
+            <div class="box">Second</div>
+            <div class="box">Third</div>
+            <div class="box">Fourth</div>
+        </div>
+        <p>flex items are go to left to right. you can change the direction from top to bottom also inverse the direction
+        </p>
+        <p>
+            🟠 column wise  top to bottom 
+        </p>
+        <div class="container display_4 flex_5">
+            <div class="box">First</div>
+            <div class="box">Second</div>
+            <div class="box">Third</div>
+            <div class="box">Fourth</div>
+        </div>
+
+        <p>
+            🟠 column wise  top to bottom inverse
+        </p>
+        <div class="container display_4 flex_6">
+            <div class="box">First</div>
+            <div class="box">Second</div>
+            <div class="box">Third</div>
+            <div class="box">Fourth</div>
+        </div>
+        <p>
+            🟠 row-reverse reverse the rows 
+        </p>
+        <div class="container display_4 flex_7">
+            <div class="box">First</div>
+            <div class="box">Second</div>
+            <div class="box">Third</div>
+            <div class="box">Fourth</div>
+        </div>
+        <p>
+            in flex box row wise direction is the main-axis and column wise direction in cross axis. the justify-content and align-item are by default work on main axis. if we inverse the axis then it works inversely 
+        </p>
+        <h3>
+            flex wrap
+        </h3>
+        <p>
+            🟠using flex wrap the boxes dont get overflow from the container. they are in the container accourding to the other properties
+        </p>
+        <div class="container display_5">
+            <div class="box">First</div>
+            <div class="box">Second</div>
+            <div class="box">Third</div>
+            <div class="box">Fourth</div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+            <div class="box"></div>
+        </div>
+        <h3>
+            align-content: center
+        </h3>
+        <p>
+
+            🟠 if justify content not apply when align content is applied the flex-wrap use when there are more then one line is the container. <br>
+            gap: 40px is applied in this case to create a gap between boxes but then gap is used is suggested to no use margin
+        </p>
+        <div class="container display_5 flex_8">
+            <div class="box box1">First</div>
+            <div class="box box1">Second</div>
+            <div class="box box1">Third</div>
+            <div class="box box1">Fourth</div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+            <div class="box box1"></div>
+        </div>
+    </main>
+</body>
+
+</html>
