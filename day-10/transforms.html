@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transform</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .container{
+            height: 60vh;
+            width: 100VW;
+            background-color: bisque;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .box{
+            height: 100px ;
+            width: 100px;
+            margin:10px;
+            background-color: orange;
+            border-radius: 10px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            }
+        .box_1{
+            transform: rotate(40deg);
+            transform: rotate(0.25turn);  
+        }
+        .box_2{
+            
+            transform: rotateY(60deg);
+            transform: rotateX(60deg);
+        }
+        .box_3{
+            transform: scale(1.2);
+            transform: scale3d(1.2);
+        }
+        .box_4{
+            transform: skew(15deg);
+            transform: skewY(15deg);
+        }
+        .box_5{
+            transform: translate(15px, 15px) skewY(-15deg) rotate(120deg);
+        }
+        .box_6{
+            transform: rotate(45deg);
+            transform-origin: (0% 0%);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box box_1">
+            BOX1
+        </div>
+        <div class="box box_2"> BOX2</div>
+        <div class="box box_3"> BOX3</div>
+        <div class="box box_4"> BOX4</div>
+        <div class="box box_5"> BOX5</div>
+        <div class="box box_6"> BOX6</div>
+        
+    </div>
+</body>
+</html>

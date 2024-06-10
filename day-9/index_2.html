@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid 2</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .container{
+            background-color: bisque;
+            border: 2px solid orange;
+            height: 600px;
+            display: grid;
+            grid-template-areas: "nav nav nav "
+                                "side article article"
+                                "con1 con2 con3 "
+                                "footer footer footer";
+        
+        }
+        .box{
+            border: 5px solid brown;
+            border-radius: 10px;
+            margin: 5px;
+            background-color: beige;
+            /*width: 55px;
+            height: 55px; */
+        }
+        .item-1{
+            grid-area: nav;
+            background-color: #A8E8F9;
+            border-color: #A8E8F9;
+        }
+        .item-2{
+            grid-area: side;
+            background-color: #00537A;
+            border-color: #00537A;
+            color: white;
+        }
+        .item-3{
+            grid-area: article;
+            background-color:#013C58;
+            border-color:#013C58;
+            color: white;
+
+        }
+        .item-4{
+            grid-area: con1;
+            background-color: #F5A201;
+            border-color: #F5A201;
+        }
+        .item-5{
+            grid-area: con2;
+            background-color:#FFBA42;
+            border-color:#FFBA42;
+        }
+        .item-6{
+            grid-area: con3;
+            background-color: #FFD35B;
+            border-color: #FFD35B;
+        }
+        .item-7{
+            grid-area: footer;
+            background-color: #F8853E;
+            border-color: #F8853E;
+        }
+        .box >p{
+            margin: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box item-1">1
+            <P>NAVBAR</P>
+        </div>
+        <div class="box item-2">2
+            <P>SIDEBAR</P>
+        </div>
+        <div class="box item-3">3
+            <P>
+                ARITCLE
+            </P>
+        </div>
+        <div class="box item-4">4
+            <P>
+                CONTENT 1
+            </P>
+        </div>
+        <div class="box item-5">5
+            <P>
+                CONTENT 2
+            </P>
+        </div>
+        <div class="box item-6">6
+            <P>
+                CONTENT 3
+            </P>
+        </div>
+        <div class="box item-7">7
+            <P>
+                FOOTER
+            </P>
+        </div>
+    </div>
+</body>
+</html>
