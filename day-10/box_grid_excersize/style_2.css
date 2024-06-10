@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #eed5fc;
+}
+.container {
+    position: relative;
+    top: 40px;
+    background-color: #eed5fc;
+    display: flex;
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 200px 200px 200px;
+    grid-template-rows: repeat(4, 150px);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.box {
+    justify-self: center;
+    width: 200px;
+    height: 150px;
+    background-color: rgb(255, 177, 75);
+    border-radius: 10px;
+    justify-content: center;
+    display: grid;
+    grid-template-rows: 1fr 2fr 1fr;
+
+}
+
+.box .text {
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+}
+
+.box .box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-row: 2/3;
+}
+
+.box .box-content p {
+    width: 170px;
+    font-size: 12px;
+    overflow: hidden;
+    word-wrap: break-word;
+    hyphens: auto;
+
+}
+
+.box .item {
+    grid-row: 3/4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box .item button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #80ed99;
+    border-radius: 6px;
+    width: 120px;
+    height: 30px;
+
+}
+.box .item button:hover{
+    background-color: #213a57;
+    color: #80ed99;
+    box-shadow: 0px 0px 15px #80ed99;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+    transform: scale(1.2);
+
+}
+.box .item a {
+    position: relative;
+    /* Required for absolute positioning */
+    display: inline-block;
+    /* Ensure the element takes the correct width */
+}
+
+.box1{
+    background-color: #5344a9;
+}
+.box2{
+    background-color: #7a5197;
+}
+.box3{
+    background-color: #bb5098;
+}
+.box4{
+    background-color: #f47f6b;
+}
+.box5{
+    background-color: #ffb32b;
+}
+.box6{
+    background-color: #f5c63c;
+}
+.box7{
+    background-color: #feeeab;
+}
+.box8{
+    background-color: #fcc47f;
+}
+.box9{
+    background-color: #f99a54;
+}
+.box10{
+    background-color: #cb1228;
+}
+
+@media only screen and (max-width: 684px) {
+    .container {
+        grid-template-columns: 200px 200px ;
+    }
+    
+}
+
+@media only screen and (max-width: 500px) {
+    .container {
+        grid-template-columns: 200px ;
+    }
+    
+}
