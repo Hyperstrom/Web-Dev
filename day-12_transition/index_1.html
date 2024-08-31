@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transition</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        .outeroutercontainter{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .outercontainter{
+            width: 420px;
+            height: 420px;
+            background-color: rgb(215, 215, 215);
+            border-radius: 20px;
+            
+            display: grid ;
+            /* grid-template-columns: repeat(2, 1fr) 2fr; */
+            grid-template-columns: repeat(2, 180px);
+            grid-template-rows: repeat(2, 180px);
+            gap: 20px;
+            place-content: center;
+            justify-items:center ; /*have to write justify-items not justify-content */
+            align-items: center;
+        }
+        .containter {
+            height: 180px;
+            width: 180px;
+            border-radius: 20px;
+        }
+        .box {
+            height: 100px;
+            width: 100px;
+            border-radius: 20px;
+        }
+
+        /*First box Animation*/
+        .item-1{
+            background-color: yellowgreen;
+        }
+        .box-item-1{
+            background-color: rgb(1, 103, 103);
+        }
+
+        .box-item-1:hover {
+            animation-name: boxanimation1;
+            animation-duration: 1s;
+            animation-delay: 100ms;
+            animation-timing-function: cubic-bezier(0.57, -0.03, 0.25, 1);
+            animation-direction: alternate;
+        }
+
+        @keyframes boxanimation1 {
+            from {}
+
+            to {
+                transform: translate(80px, 80px);
+
+            }
+        }
+
+        .item-2{
+            background-color: burlywood;
+        }
+        .box-item-2{
+            background-color: brown;   
+        }
+        .box-item-2:hover {
+            animation-name: boxanimation2;
+            animation-duration: 2s;
+            animation-delay: 100ms;
+            animation-timing-function: cubic-bezier(0.57, -0.03, 0.25, 1);
+        }
+        @keyframes boxanimation2 {
+            from {}
+
+            to 0% {
+                transform: translate(0px, 0px);
+            }
+            50% {
+                transform: translate(80px, 80px);
+            }
+            100% {
+                transform: translate(80px, 0px);
+            }
+        }
+        .item-3{
+            background-color: black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box-item-3{
+            border-radius: 50%;
+            background: linear-gradient(#ff0101, #d35400,#f1c40f,#2ecc71,#2471a3, #6c3483);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            animation: loading 1s  linear infinite;
+        }
+        .box3{
+            height: 80px;
+            width: 80px;
+            background-color: black;
+            border-radius: 50%;
+        }
+        @keyframes loading {
+            from {}
+
+            to 0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+            
+    </style>
+</head>
+
+<body>
+    <div class="outeroutercontainter">
+
+        <div class="outercontainter">
+            <div class="containter item-1">
+                <div class="box box-item-1">
+                </div>
+            </div>
+            
+            <div class="containter item-2">
+                <div class="box box-item-2">
+                </div>
+            </div>
+            <div class="containter item-3">
+                <div class="box box-item-3">
+                    <div class="box3">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </body>
+    
+</html>
