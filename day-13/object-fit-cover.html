@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Object fit and Position</title>
+    <style>
+        .container{
+            width: 350px;
+            height: 360px;
+            background-color: aqua;
+            border: 10px solid gold;
+            border-radius: 10px;
+        }
+        img{
+            width: 350px;
+            height: 360px;
+            object-fit: cover; /*this property fit the image in this aspect ratio of the box for that image may be cut some point */
+            object-fit: contain; /*with this property the image will fit in the box containes the image aspect ratio do not cut or crop the image*/
+            /*object-position: top-right*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://upload.wikimedia.org/wikipedia/en/6/60/Doctor_Doom_%282018%29.jpg" alt="">
+    </div>
+</body>
+</html>
